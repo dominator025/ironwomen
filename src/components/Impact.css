@@ -1,0 +1,143 @@
+/* Impact / AI / Trust */
+.trust-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+.trust-card {
+    padding: 40px;
+    background: rgba(17, 34, 64, 0.5);
+}
+
+.check-list li {
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 28px;
+    color: var(--text-muted);
+}
+
+.check-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--secondary);
+    font-weight: bold;
+}
+
+.arrow-list li {
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 24px;
+    color: var(--text-muted);
+}
+
+.arrow-list li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--accent-light);
+}
+
+.glow-text {
+    text-shadow: 0 0 10px rgba(16, 185, 129, 0.3);
+}
+
+.badge {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: var(--text-light);
+}
+
+/* Impact Stats */
+.impact-section {
+    padding-bottom: 0;
+}
+
+.i-stat {
+    padding: 32px;
+    min-width: 250px;
+    text-align: center;
+}
+
+.i-stat h3 {
+    font-size: 3rem;
+    margin-bottom: 8px;
+    font-weight: 800;
+}
+
+/* CTA */
+.cta-banner {
+    margin-top: 80px;
+    padding: 80px 40px;
+    border-radius: 24px 24px 0 0;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    background: #010812;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 80px 0 40px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.footer-links h4,
+.footer-social h4 {
+    color: var(--text-light);
+    margin-bottom: 24px;
+    font-family: var(--font-poppins);
+}
+
+.footer-links ul li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+.footer-links a:hover {
+    color: var(--secondary);
+}
+
+.social-icon {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+}
+
+.social-icon:hover {
+    background: var(--secondary);
+    color: white;
+}
+
+@media (max-width: 968px) {
+    .trust-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+}
